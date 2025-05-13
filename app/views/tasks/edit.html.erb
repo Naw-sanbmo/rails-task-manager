@@ -1,0 +1,11 @@
+<div class="container">
+<h1>Update task</h1>
+<%= form_with model: @task do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, class: 'form-control' %>
+  <%= f.label :details %>
+  <%= f.text_field :details, class: 'form-control' %>
+  <p><%= f.check_box :completed, class: 'mt-3' %> completed</p>
+  <%= f.submit "Update task", class: 'btn btn-primary mt-2' %>
+<% end %>
+</div>
